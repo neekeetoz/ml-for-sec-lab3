@@ -17,3 +17,17 @@
 3. Желательно почаще делать коммиты. В идеале - как только решена некоторая промежуточная задача.
 4. Коммиты *должны* иметь вменяемые описания.
 5. Рекомендуется, чтобы ваш репозиторий содержал файлы [.gitignore](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) (для них имеется набор [шаблонов](https://github.com/github/gitignore)) и [requirements.txt](https://www.jetbrains.com/help/pycharm/managing-dependencies.html#create-requirements)
+
+## Docker 
+
+Рекоммендуется запускать через WSL либо на Unix системах.
+
+Команда для сборки образа:
+```bash
+docker build -f Dockerfile.cpu -t ml-for-sec-3 .
+```
+
+Поднять контейнер можно следующей командой:
+```bash
+docker run --rm -it -v $(pwd):/workspace -u $(id -u):$(id -g) ml-for-sec-3
+```
