@@ -29,7 +29,7 @@
     pandas \
     Pillow==7.1.2 \
     scikit-image==0.16.2 \
-    scipy==1.4.1 \
+    scipy==1.5.0 \
     tqdm \
     Wand
 ```
