@@ -38,17 +38,3 @@
     tqdm \
     Wand
 ```
-
-## Локальный запуске через Docker
-
-Рекоммендуется запускать через WSL либо на Unix системах.
-
-Команда для сборки образа:
-```bash
-docker build -f Dockerfile.cpu -t ml-for-sec-3 .
-```
-
-Поднять контейнер можно следующей командой:
-```bash
-docker run --rm -it -v $(pwd):/workspace -u $(id -u):$(id -g) ml-for-sec-3
-```
